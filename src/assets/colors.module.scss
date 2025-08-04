@@ -1,0 +1,70 @@
+:root {
+  --color-bg-primary-light: #fff;
+  --color-bg-primary-dark: #131f24;
+
+  --color-text-primary-light: rgb(75, 75, 75);
+  --color-text-primary-dark: rgb(241, 247, 251);
+  --color-text-secondary-light: rgb(119, 119, 119);
+  --color-text-secondary-dark: rgb(220, 230, 236);
+  --color-text-tertiary-light: rgb(119, 119, 119);
+  --color-text-tertiary-dark: rgb(220, 230, 236);
+  --color-text-danger-light: rgba(255, 75, 75, 1);
+  --color-text-danger-dark: rgba(255, 75, 75, 1);
+
+  --color-border-primary-light: rgb(229, 229, 229);
+  --color-border-primary-dark: rgb(55, 70, 79);
+
+  --color-button-primary-bg-light: rgb(88, 204, 2);
+  --color-button-primary-bg-dark: rgba(88, 204, 2);
+  --color-button-primary-shadow-light: rgb(88, 167, 0);
+  --color-button-primary-shadow-dark:rgba(70, 163, 2);
+  --color-button-secondary-bg-light: rgb(28, 176, 246);
+  --color-button-secondary-bg-dark: rgb(73, 192, 248);
+  --color-button-secondary-shadow-light: rgb(24, 153, 214);
+  --color-button-secondary-shadow-dark: rgb(24, 153, 214);
+  --color-button-danger-bg-light: rgba(255, 75, 75, 1);
+  --color-button-danger-bg-dark: rgba(255, 75, 75, 1);
+  --color-button-danger-shadow-light: rgba(201, 58, 58, 1);
+  --color-button-danger-shadow-dark: rgba(201, 58, 58, 1);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg-primary: var(--color-bg-primary-light);
+
+    --color-text-primary: var(--color-text-primary-light);
+    --color-text-secondary: var(--color-text-secondary-light);
+    --color-text-tertiary: var(--color-text-tertiary-light);
+    --color-text-danger: var(--color-text-danger-light);
+
+    --color-border-primary: var(--color-border-primary-light);
+
+    --color-button-primary-bg: var(--color-button-primary-bg-light);
+    --color-button-primary-shadow: var(--color-button-primary-shadow-light);
+    --color-button-secondary-bg: var(--color-button-secondary-bg-light);
+    --color-button-secondary-shadow: var(--color-button-secondary-shadow-light);
+    --color-button-danger-bg: var(--color-button-danger-bg-light);
+    --color-button-danger-shadow: var(--color-button-danger-shadow-light);
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: var(--color-bg-primary-dark);
+
+    --color-text-primary: var(--color-text-primary-dark);
+    --color-text-secondary: var(--color-text-secondary-dark);
+    --color-text-tertiary: var(--color-text-tertiary-dark);
+    --color-text-danger: var(--color-text-danger-dark);
+
+    --color-border-primary: var(--color-border-primary-dark);
+
+    --color-button-primary-bg: var(--color-button-primary-bg-dark);
+    --color-button-primary-shadow: var(--color-button-primary-shadow-dark);
+    --color-button-secondary-bg: var(--color-button-secondary-bg-dark);
+    --color-button-secondary-shadow: var(--color-button-secondary-shadow-dark);
+    --color-button-danger-bg: var(--color-button-danger-bg-dark);
+    --color-button-danger-shadow: var(--color-button-danger-shadow-dark);
+  }
+}

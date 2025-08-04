@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Dinroundpro;
+  font-weight: 300;
+  src: url("./fonts/dinroundpro_light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Dinroundpro;
+  font-weight: 400;
+  src: url("./fonts/dinroundpro.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Dinroundpro;
+  font-weight: 500;
+  src: url("./fonts/dinroundpro_medi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Dinroundpro;
+  font-weight: 700;
+  src: url("./fonts/dinroundpro_bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Dinroundpro;
+  font-weight: 900;
+  src: url("./fonts/dinroundpro_black.otf") format("opentype");
+}
+
+:root {
+  --font-heading-b-32: 700 32px/40px Dinroundpro, sans-serif;
+
+  --font-body-r-12: 400 12px/15px Dinroundpro, sans-serif;
+  --font-body-b-12: 700 12px/15px Dinroundpro, sans-serif;
+
+  --font-body-r-15: 400 15px/22px Dinroundpro, sans-serif;
+  --font-body-b-15: 700 15px/22px Dinroundpro, sans-serif;
+
+  --font-body-r-17: 400 17px/24px Dinroundpro, sans-serif;
+  --font-body-b-17: 700 17px/24px Dinroundpro, sans-serif;
+
+  --font-body-r-19: 400 19px/26px Dinroundpro, sans-serif;
+  --font-body-b-19: 700 19px/26px Dinroundpro, sans-serif;
+
+  --font-title-b-48: 700 48px/60px Inter, sans-serif;
+}
