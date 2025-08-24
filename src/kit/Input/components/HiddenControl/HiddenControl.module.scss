@@ -1,0 +1,29 @@
+.hidden-control {
+  --input-hidden-control-size: 20px;
+
+  width: var(--input-hidden-control-size);
+  min-width: var(--input-hidden-control-size);
+  height: var(--input-hidden-control-size);
+  min-height: var(--input-hidden-control-size);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  cursor: pointer;
+  transition: opacity .2s;
+  background: transparent;
+
+  box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon {
+  &.hidden {
+    display: none;
+  }
+}

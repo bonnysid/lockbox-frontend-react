@@ -1,0 +1,81 @@
+.controller {
+  &-wrapper {
+    --controller-field-bg: var(--color-bg-secondary);
+    --controller-field-border-color: var(--color-border-primary);
+    --controller-field-color: var(--color-text-primary);
+    --controller-field-outline: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+
+    &:hover {
+      --controller-field-border-color: var(--color-border-secondary);
+    }
+
+    &:active {
+      --controller-field-border-color: var(--color-border-tertiary);
+    }
+
+    &.isFocused {
+      --controller-field-border-color: var(--color-border-tertiary);
+      --controller-field-outline: 2px solid var(--color-outline-focused);
+    }
+
+    &.isError {
+      --controller-field-border-color: var(--color-error-primary);
+
+      &:hover, &:active {
+        --controller-field-border-color: var(--color-error-primary);
+      }
+    }
+
+    &.disabled {
+      --controller-field-border-color: var(--color-border-primary);
+      --controller-field-bg: var(--color-bg-primary);
+    }
+
+    &.large {
+      --controller-field-height: 40px;
+    }
+
+    &.medium {
+      --controller-field-height: 32px;
+    }
+
+    &.small {
+      --controller-field-height: 24px;
+    }
+  }
+
+  &-field {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: var(--controller-field-bg);
+    border: 1px solid var(--controller-field-border-color);
+    transition: border-color .2s, background-color .2s;
+    font: var(--font-title-r-14);
+    color: var(--controller-field-color);
+    outline: var(--controller-field-outline);
+    height: var(--controller-field-height);
+    padding: 0 4px;
+  }
+}
+
+.caption {
+  font: var(--font-body-r-14);
+  color: var(--color-text-primary);
+}
+
+.error {
+  font: var(--font-body-r-12);
+  color: var(--color-text-error);
+}
+
+.description {
+  font: var(--font-body-r-12);
+  color: var(--color-text-secondary);
+}

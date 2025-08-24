@@ -1,5 +1,6 @@
 import { Navigate, RouteObject } from 'react-router-dom';
 import { Layout, PrivateGuard } from '@/components';
+import { SignInPage } from '@/pages/SignInPage';
 
 export enum PublicLinks {
   LOGIN = '/login',
@@ -20,7 +21,7 @@ export const ROUTES: RouteObject[] = [
         children: [
           {
             path: PublicLinks.LOGIN,
-            Component: () => <>login</>,
+            Component: SignInPage,
           },
           {
             path: PublicLinks.REGISTER,

@@ -1,5 +1,5 @@
 {
-  "name": "lock-box",
+  "name": "lock-box-frontend-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,14 @@
     "lint": "eslint . --fix",
     "prettier": "prettier",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "generate:icons": "npx tsx ./src/scripts/generateIconTypes.ts"
   },
   "dependencies": {
     "classnames": "^2.5.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.62.0",
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
@@ -40,7 +42,10 @@
     "vite": "^7.0.4",
     "vite-plugin-svgr": "^4.3.0"
   },
-  "lint-staged" : {
-    "src/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}": ["eslint . --fix", "prettier"]
+  "lint-staged": {
+    "src/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}": [
+      "eslint . --fix",
+      "prettier"
+    ]
   }
 }

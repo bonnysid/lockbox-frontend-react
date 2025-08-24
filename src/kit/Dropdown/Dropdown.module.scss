@@ -1,0 +1,62 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.trigger {
+  display: contents;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+
+  &.none {
+    opacity: 1;
+  }
+
+  &.fade {
+    &-bottom {
+      animation: fade-in 300ms forwards 100ms;
+    }
+
+    &-top {
+      animation: fade-in-top 300ms forwards 100ms;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+    width: fit-content;
+
+    &.fullWidth {
+      width: 100%;
+    }
+  }
+
+  &.withShadow {
+    box-shadow: var(--shadow-primary);
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+}

@@ -30,6 +30,7 @@ export default defineConfig([
       'no-var': 2,
       'linebreak-style': 0,
       'prefer-const': 2,
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
   },
 ]);

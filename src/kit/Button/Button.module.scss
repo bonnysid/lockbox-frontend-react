@@ -1,0 +1,110 @@
+.button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  transition: background-color .2s, opacity .2s;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+
+  &.large {
+    padding: 8px;
+    height: 40px;
+  }
+
+  &.medium {
+    padding: 4px 8px;
+    height: 32px;
+  }
+
+  &.small {
+    padding: 0;
+    height: 24px;
+  }
+
+  &.isFullWidth {
+    width: 100%;
+  }
+
+  &.primary {
+    --button-color: var(--color-text-extra);
+
+    background-color: var(--color-button-normal-primary);
+    color: var(--button-color);
+
+    &:hover {
+      background-color: var(--color-button-hover-primary);
+    }
+
+    &:active, &.isActive {
+      background-color: var(--color-button-pressed-primary);
+    }
+
+    &:disabled {
+      background-color: var(--color-button-normal-primary);
+
+      &:hover, &:active {
+        background-color: var(--color-button-normal-primary);
+      }
+    }
+  }
+
+  &.secondary {
+    --button-color: var(--color-text-primary);
+
+    background-color: var(--color-button-normal-secondary);
+    color: var(--button-color);
+    border: 1px solid var(--color-border-primary);
+
+    &:hover {
+      background-color: var(--color-button-hover-secondary);
+    }
+
+    &:active, &.isActive {
+      background-color: var(--color-button-pressed-secondary);
+    }
+
+    &:disabled {
+      background-color: var(--color-button-normal-secondary);
+
+      &:hover, &:active {
+        background-color: var(--color-button-normal-secondary);
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-outline-focused);
+  }
+
+  &.isLoading {
+    & .text, & .icon {
+      visibility: hidden;
+    }
+  }
+}
+
+.loader {
+  color: var(--button-color);
+  position: absolute;
+  left: calc(50% - 12px);
+}
+
+.text {
+  font: var(--font-title-sb-14);
+  color: var(--button-color);
+  transition: color .2s;
+}
+
+.icon {
+  color: var(--button-color);
+  transition: color .2s;
+}
